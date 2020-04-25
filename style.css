@@ -283,6 +283,10 @@ footer img {
 
 /* Responsive */
 @media (max-width: 1000px) {
+  .home h1 {
+    font-size: 30px;
+  }
+	
   .team {
     justify-content: center;
   }
@@ -346,6 +350,26 @@ footer img {
     right: 0;
   }
 
+  .home animated fadeIn {
+    text-align: left;
+    padding-top: 130px;
+  }
+
+  .home animated fadeIn h1 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .home animated fadeIn p {
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+ .bttn-wrapper {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+	
   .team-member {
     width: 55%;
   }
