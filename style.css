@@ -14,6 +14,10 @@ a {
   width: 50px;
 }
 
+h2 {
+  font-weight: 500;
+}
+
 .container {
   max-width: 1170px;
   padding: 0 15px;
@@ -24,7 +28,7 @@ a {
   text-align: center;
   padding-top: 20px;
   /* padding-bottom: 15px; */
-  font-size: 27px;
+  font-size: 20px;
 }
 
 main {
@@ -33,16 +37,16 @@ main {
 
 /* Header */
 header {
-  background-color: rgb(41, 41, 41);
+  background-color: #212529;
   height: 70px;
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 10;
 }
 
 .logo img {
   width: 70px;
-  margin-top: 5px;
 }
 
 header ul {
@@ -65,7 +69,7 @@ header ul li a {
 }
 
 header a:hover {
-  background: #3498db;
+  background: #ffd300;
   transition: 0.5s;
 }
 
@@ -83,16 +87,15 @@ header a:hover {
   display: none;
 }
 
-/* home */
-
+/* Home */
 .animated fadeInUp delay-1s h1 {
-    font-size: 32px;
+  font-size: 32px;
 }
 
 .home {
-  padding: 180px 0 100px 0;
-  background-image: url('background.jpg');
+  background-image: url("img/background.jpg");
   background-size: cover;
+  padding: 180px 0 100px 0;
   color: white;
   text-align: center;
 }
@@ -112,15 +115,17 @@ header a:hover {
 }
 
 .bttn-wrapper {
-	margin: 10px 0
+  margin: 20px 0;
 }
 
 .bttn {
-  padding: 12px 40px;
+  padding: 12px 30px;
   color: white;
-  display: inline-block;
+  /* display: inline-block; */
   opacity: 0.9;
   border-radius: 4px;
+  text-align: center;
+  font-weight: bold;
 }
 
 .explore {
@@ -128,29 +133,42 @@ header a:hover {
 }
 
 .bttn:hover {
-  background-color: #9999a1;
+  background-color: #f3cb00;
   opacity: 0.8;
 }
 
-/*About Us*/
-.about{
-  	padding-bottom: 350px;
-  	padding-top: 20px; 
-    background-color: #edf2fa;
+/* About Us */
+.about {
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: white;
 }
-.content-items{
-	width:50%;
-	float:left;
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 0 30px;
 }
-.pict{
-  width: 80%;
-  padding-left: 130px;
-  padding-top: 20px;
-  padding-bottom: 30px;
+
+.content-items {
+  width: 50%;
+}
+
+.content-items p {
+  text-align: justify;
+  line-height: 35px;
+}
+
+.pict {
+  padding-top: 10%;
+  width: 70%;
+}
 
 /* our team */
-
 .our-team {
+  background-color: #f8f9fa;
   padding-bottom: 80px;
   padding-left: 5%;
   padding-right: 5%;
@@ -174,7 +192,7 @@ header a:hover {
 }
 
 .team-member img:hover {
-  border: 5px solid #2980b9;
+  border: 5px solid #ffd300;
 }
 
 .team-member h4 {
@@ -200,7 +218,7 @@ header a:hover {
 .icon {
   color: white;
   font-size: 25px;
-  background-color: #3498db;
+  background-color: #212529;
   width: 50px;
   height: 50px;
   border-radius: 100%;
@@ -212,12 +230,12 @@ header a:hover {
 
 .icon:hover,
 .icon:active {
-  background-color: #e74c3c;
+  background-color: #ffd300;
 }
 
 /* contact us */
 .contact-us {
-  background-color: rgb(248, 248, 248);
+  /* background-color: rgb(248, 248, 248); */
   padding-bottom: 80px;
   padding-left: 5%;
   padding-right: 5%;
@@ -226,7 +244,7 @@ header a:hover {
 .form {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  text-align: center;
   width: 100%;
   margin-top: 0;
 }
@@ -234,10 +252,11 @@ header a:hover {
 .form input,
 textarea {
   flex: 1 1 auto;
-  margin: 5px;
-  padding: 10px;
+  /* margin: 5px; */
+  /* padding: 10px; */
+  padding: 21px 0;
   margin: 10px 0 13px 0;
-  border: 1px solid #dee7ec;
+  border: 2px solid #dee7ec;
   border-radius: 5px;
   /* background-color: #e7f2f8; */
   width: 90%;
@@ -249,11 +268,6 @@ textarea {
   width: 50%;
 }
 
-input,
-textarea {
-  font-style: italic;
-}
-
 textarea {
   height: 100px;
 }
@@ -262,20 +276,22 @@ textarea {
   padding: 10px 24px;
   color: white;
   display: inline-block;
-  opacity: 0.8;
+  opacity: 0.9;
   border-radius: 4px;
   text-align: center;
+  font-weight: bold;
 }
 
 .btn:hover {
-  opacity: 1;
+  background-color: #f3cb00;
+  opacity: 0.8;
 }
 
 .submit {
   padding: 10px 40px;
-  background-color: #3498db;
+  background-color: #ffd300;
   cursor: pointer;
-  box-shadow: 0 7px #2980b9;
+  box-shadow: 0 7px #dfba00;
 }
 
 .submit:active {
@@ -286,32 +302,65 @@ textarea {
 
 /* Footer */
 footer {
-  background-color: rgb(41, 41, 41);
-  text-align: center;
+  background-color: #212529;
   width: 100%;
-  height: 50px;
+  height: 60px;
 }
 
 footer img {
-  width: 50px;
-  margin-top: 4px;
+  width: 60px;
+  margin-top: 10px;
+}
+
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
 }
 
 /* Responsive */
 @media (max-width: 1000px) {
+  header ul li a {
+    font-size: 15px;
+  }
+
   .home h1 {
     font-size: 30px;
   }
-	
-.content-items{
-    width: 50%;
-    margin-bottom: 50px;
- }
- .pict{
-    padding-left: 50px;
-    padding-top: 60px;
- }
-  
+
+  .home animated fadeIn {
+    text-align: left;
+    padding-top: 130px;
+  }
+
+  .home animated fadeIn h1 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .home animated fadeIn p {
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  .bttn-wrapper {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* about */
+  .content {
+    justify-content: center;
+  }
+
+  .content-items {
+    width: 80%;
+  }
+
+  .pict {
+    display: none;
+  }
+
+  /* our team */
   .team {
     justify-content: center;
   }
@@ -328,7 +377,7 @@ footer img {
   }
 
   .heading {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .form input,
@@ -352,8 +401,7 @@ footer img {
     top: 70px;
     right: -120%;
     text-align: center;
-    transition: all .5s;
-
+    transition: all 0.5s;
   }
 
   header ul li {
@@ -368,58 +416,15 @@ footer img {
 
   header a:hover {
     background: none;
-    color: #0082e6;
+    color: #ffd300;
   }
 
   #check:checked~.menu {
     right: 0;
   }
-  
-  .content-items{
-    width: 100%;
-  }
-  .content-items h2{
-    text-align: center;
-  }
-  .content-items p{
-    text-align: justify;
-  }
-  .about{
-    padding-bottom: 600px;
-  }
-  .pict{
-    width: 100%;
-    padding-right: 50px;
-    padding-top: 10px;
-  }
 
-  .home animated fadeIn {
-    text-align: left;
-    padding-top: 130px;
-  }
-
-  .home animated fadeIn h1 {
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  .home animated fadeIn p {
-    font-size: 10px;
-    line-height: 16px;
-  }
-
- .bttn-wrapper {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-	
   .team-member {
     width: 55%;
-  }
-
-  .form input,
-  textarea {
-    width: 100%;
   }
 
   .form {
@@ -428,9 +433,18 @@ footer img {
     margin-top: 50px;
   }
 
+  .form-left input,
+  .form-right textarea {
+    width: 100%;
+  }
+
   .form-left,
   .form-right {
     flex: auto;
     width: 100%;
+  }
+
+  footer {
+    text-align: center;
   }
 }
