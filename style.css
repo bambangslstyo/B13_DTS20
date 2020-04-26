@@ -132,6 +132,22 @@ header a:hover {
   opacity: 0.8;
 }
 
+/*About Us*/
+.about{
+  	padding-bottom: 350px;
+  	padding-top: 20px; 
+    background-color: #edf2fa;
+}
+.content-items{
+	width:50%;
+	float:left;
+}
+.pict{
+  width: 80%;
+  padding-left: 130px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+
 /* our team */
 
 .our-team {
@@ -287,6 +303,15 @@ footer img {
     font-size: 30px;
   }
 	
+.content-items{
+    width: 50%;
+    margin-bottom: 50px;
+ }
+ .pict{
+    padding-left: 50px;
+    padding-top: 60px;
+ }
+  
   .team {
     justify-content: center;
   }
@@ -348,6 +373,24 @@ footer img {
 
   #check:checked~.menu {
     right: 0;
+  }
+  
+  .content-items{
+    width: 100%;
+  }
+  .content-items h2{
+    text-align: center;
+  }
+  .content-items p{
+    text-align: justify;
+  }
+  .about{
+    padding-bottom: 600px;
+  }
+  .pict{
+    width: 100%;
+    padding-right: 50px;
+    padding-top: 10px;
   }
 
   .home animated fadeIn {
