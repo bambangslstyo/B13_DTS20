@@ -83,6 +83,55 @@ header a:hover {
   display: none;
 }
 
+/* home */
+
+.animated fadeInUp delay-1s h1 {
+    font-size: 32px;
+}
+
+.home {
+  padding: 180px 0 100px 0;
+  background-image: url('background.jpg');
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.home h1 {
+  font-size: 50px;
+  margin-bottom: 8px;
+}
+
+.home p {
+  opacity: 0.9;
+  margin-bottom: 5px;
+}
+
+.home span {
+  color: #ffd300;
+}
+
+.bttn-wrapper {
+	margin: 10px 0
+}
+
+.bttn {
+  padding: 12px 40px;
+  color: white;
+  display: inline-block;
+  opacity: 0.9;
+  border-radius: 4px;
+}
+
+.explore {
+  background-color: #ffd300;
+}
+
+.bttn:hover {
+  background-color: #9999a1;
+  opacity: 0.8;
+}
+
 /* our team */
 
 .our-team {
@@ -234,6 +283,10 @@ footer img {
 
 /* Responsive */
 @media (max-width: 1000px) {
+  .home h1 {
+    font-size: 30px;
+  }
+	
   .team {
     justify-content: center;
   }
@@ -297,6 +350,26 @@ footer img {
     right: 0;
   }
 
+  .home animated fadeIn {
+    text-align: left;
+    padding-top: 130px;
+  }
+
+  .home animated fadeIn h1 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .home animated fadeIn p {
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+ .bttn-wrapper {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+	
   .team-member {
     width: 55%;
   }
